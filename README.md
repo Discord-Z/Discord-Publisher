@@ -19,7 +19,6 @@ r = requests.post(URL, headers=headers)
 print(r)
 ```
 ---
----
 ## 비동기 예제
 `봇이 공지 채널에 메시지 읽기, 메시지 보내기, 메시지 관리 권한만 있으면 가능합니다.`
 ```py
