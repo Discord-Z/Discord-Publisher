@@ -10,8 +10,8 @@ import requests
 
 Bot_Token = "" # 자신의 디스코드 봇토큰 (발행을 할 서버에 봇이 있어야함)
 
-channel_id = 000000000000000000 # 채널아이디
-message_id = 000000000000000000 # 메시지아이디
+channel_id = 000000000000000000 # 팔로우채널아이디
+message_id = 000000000000000000 # 발신할메시지아이디
 
 URL = f"https://discord.com/api/v6/channels/{channel_id}/messages/{message_id}/crosspost"
 headers = {'Authorization': f'Bot {Bot_Token}'}
@@ -27,8 +27,8 @@ import asyncio
 
 Bot_Token = "" # 자신의 디스코드 봇토큰 (발행을 할 서버에 봇이 있어야함)
 
-channel_id = 000000000000000000 # 채널아이디
-message_id = 000000000000000000 # 메시지아이디
+channel_id = 000000000000000000 # 팔로우채널아이디
+message_id = 000000000000000000 # 발신할메시지아이디
 
 async def POST():
     
