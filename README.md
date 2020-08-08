@@ -10,10 +10,10 @@
 ```py
 import requests
 
-Bot_Token = ""
+Bot_Token = "" # 자신의 봇토큰 (발신할 채널에 봇이 있어야함)
 
-channel_id = 000000000000000000
-message_id = 000000000000000000
+channel_id = 000000000000000000 # 채널아이디
+message_id = 000000000000000000 # 메시지아이디
 
 URL = f"https://discord.com/api/v6/channels/{channel_id}/messages/{message_id}/crosspost"
 headers = {'Authorization': f'Bot {Bot_Token}'}
@@ -28,10 +28,10 @@ print(r)
 import aiohttp
 import asyncio
 
-Bot_Token = ""
+Bot_Token = "" # 자신의 봇토큰 (발신할 채널에 봇이 있어야함)
 
-channel_id = 000000000000000000
-message_id = 000000000000000000
+channel_id = 000000000000000000 # 채널아이디
+message_id = 000000000000000000 # 메시지아이디
 
 async def POST():
     
@@ -49,3 +49,7 @@ async def POST():
                     
 asyncio.run(POST())
 ```
+#라이선스
+**나중에 추가예정이나 추가 안할거임**
+
+Discord : `OWO#1996`
